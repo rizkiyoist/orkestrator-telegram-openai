@@ -1,0 +1,4 @@
+Note: Jangan lupa jalankan dari virtual env
+
+pip install python-telegram-bot --upgrade
+pip install openai
