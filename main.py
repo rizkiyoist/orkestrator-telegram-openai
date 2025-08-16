@@ -14,6 +14,8 @@ async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE):
 app = ApplicationBuilder().token("your token here").build()
 
 app.add_handler(CommandHandler("hello", hello))
-app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, test_caller.echo))
+app.add_handler(MessageHandler(None, test_caller.echo))
+
+# panggil openai_caller dari sini
 
 app.run_polling()
